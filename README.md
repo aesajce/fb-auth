@@ -1,7 +1,7 @@
 # fb-auth
 Firebase Authentication
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aesajce/fb-auth@1.0.2/auth-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aesajce/fb-auth@1.0.2/auth-ui.css"> <br><br>
 
 <script src="https://cdn.jsdelivr.net/gh/aesajce/fb-auth@1.0.2/auth-ui.js"></script>
 
