@@ -2,7 +2,7 @@
 Firebase Authentication
 
 ``` Javascript
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aesajce/fb-auth@1.0.2/auth-ui.css"> <br><br>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aesajce/fb-auth@1.0.2/auth-ui.css">
 
 <script src="https://cdn.jsdelivr.net/gh/aesajce/fb-auth@1.0.2/auth-ui.js"></script>
 
