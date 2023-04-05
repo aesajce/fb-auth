@@ -1,2 +1,2 @@
 # fb-auth
-Firebase Authentivcation
+Firebase Authentication
