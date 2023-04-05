@@ -8,8 +8,8 @@ Firebase Authentication
 
 <script>
     initAuth({
-         apiKey: "AIzaSyDQM5QkMsQ59017uaBz7aNKBQPYaiYOWCA",
-             authDomain: "auth.ajce.in",
+         apiKey: "AIzaSy-----------------", //API-KEY
+             authDomain: "auth.ajce.in", // Auth Doamin
              policy:false,
              providers:[
                  "google","microsoft","email"
