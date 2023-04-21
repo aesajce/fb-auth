@@ -641,7 +641,7 @@ let initAuth = (options,callback) =>{
         var emailIndex = options.providers.indexOf('email');
         $('#firebaseui-auth_window').append("<div id='firebaseui-loaded'> <div id='firebaseui-user-signed-out'> <div id='firebaseui-spa'> <div id='firebaseui-container'></div> </div> </div> </div>");
         firebaseAuthUI(function (response) {
-            if(emailIndex >-1 && typeof options.policy !== "undefined" && !options.policy){
+            if(typeof options.policy !== "undefined" && !options.policy){
                 $("<style> .firebaseui-card-footer{ display:none;} </style>").appendTo("head");
             }
           	if(!_loaded && options.providers.length>0){
