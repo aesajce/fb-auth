@@ -96,3 +96,11 @@ dialog + .backdrop {
 .firebaseui-social-buttons{
     margin-top:6px;
 }
+.data-dismiss-close{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
