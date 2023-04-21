@@ -625,7 +625,7 @@ var timer,ui;
 var _loaded=false;
 
 let initAuth = (options,callback) =>{
-    $('body').append('<div class="modal" id="firebaseui-auth"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"> <div class="modal-header"> <h4 class="modal-title" id="firebaseui-authmodal-title">Login to Access</h4> <button type="button" data-bs-dismiss="modal"><i class="fa fa-times text-danger"></i></button> </div> <div class="modal-body" id="firebaseui-auth_window"></div> </div> </div> </div>');
+    $('body').append('<div class="modal" id="firebaseui-auth"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"> <div class="modal-header"> <h4 class="modal-title" id="firebaseui-authmodal-title">Login to Access</h4> <button type="button" class="data-dismiss-close" data-dismiss="modal" data-bs-dismiss="modal"><i class="fa fa-times text-danger"></i></button> </div> <div class="modal-body" id="firebaseui-auth_window"></div> </div> </div> </div>');
     if(typeof options.apiKey === "undefined"){
         console.error("No apiKey defined!");
     }else if(typeof options.authDomain === "undefined"){
@@ -639,12 +639,7 @@ let initAuth = (options,callback) =>{
         });
         ui = new firebaseui.auth.AuthUI(firebase.auth());
         var emailIndex = options.providers.indexOf('email');
-        if(emailIndex !== -1){
-            options.providers.splice(emailIndex, 1);
-            $('#firebaseui-auth_window').append("<div id='firebaseui-loaded'> <div id='firebaseui-user-signed-out'> <div id='firebaseui-spa'> <div id='firebaseui-container'></div> </div> </div> </div>");
-        }else{
-            $('#firebaseui-auth_window').append("<div id='firebaseui-loaded'> <div id='firebaseui-user-signed-out'></div> </div>");
-        } 
+        $('#firebaseui-auth_window').append("<div id='firebaseui-loaded'> <div id='firebaseui-user-signed-out'> <div id='firebaseui-spa'> <div id='firebaseui-container'></div> </div> </div> </div>");
         firebaseAuthUI(function (response) {
             if(emailIndex >-1 && typeof options.policy !== "undefined" && !options.policy){
                 $("<style> .firebaseui-card-footer{ display:none;} </style>").appendTo("head");
